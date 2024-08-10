@@ -1,0 +1,92 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 250px;
+    border: 2px solid red;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.container-ig{
+    width: 20%;
+    height: 100px;
+    
+    background-color: pink;
+}
+.container-fb{
+    width: 20%;
+    height: 100px;
+   
+    background-color: blue;
+}
+.container-wa{
+    width: 20%;
+    height: 100px;
+    
+    background-color: green;
+}
+.container-x{
+    width: 20%;
+    height: 100px;
+    
+    background-color: rgb(92, 92, 92);
+}
+@media screen and (max-width : 600px) {
+    .container {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .container-ig {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .container-fb {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .container-wa {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .container-x {
+        width: 100%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .container-ig h1 {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-fb h1 {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-ig h1 {
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-wa h1{
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .container-wa h1{
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+h1 {
+    font-size: 20px;
+}

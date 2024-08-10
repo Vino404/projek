@@ -1,0 +1,227 @@
+/* Reset margin dan padding untuk elemen dasar */
+
+@keyframes anime{
+    0%{
+        color: red;
+    }
+    100%{
+        color: blue;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes masuk-kanan{
+    0%{
+
+    }
+    100%{
+
+    }
+}
+@keyframes txthdr{
+    0%{
+        color: green;
+        background-color: blue;
+    }
+    50%{
+        color: red;
+        background-color: black;
+    }
+    100%{
+        color: green;
+        background-color: yellow;
+    }
+}
+@font-face {
+    font-family: gua;
+    src: url(asset/Break\ gothic.ttf);
+}
+@font-face {
+    font-family: guadua;
+    src: url(asset/Keep\ Cheese.ttf);
+}
+body {
+    color: rgb(254, 0, 0);
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+p {
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+/* Style untuk heading */
+#heading {
+    border: 2px solid white;
+    background-color: red;
+    border-radius: 0 0 20px 20px; /* Membuat sudut bawah melengkung */
+    width: 100%; /* Memastikan lebar penuh */
+    height: 70px; /* Tinggi tetap untuk header */
+    position: sticky; /* Menempel di bagian atas saat scroll */
+    top: 0; /* Menempel di bagian atas */
+    left: 0; /* Menempel di sisi kiri */
+    right: 0; /* Menempel di sisi kanan */
+    padding: 10px; /* Padding di dalam header */
+    box-sizing: border-box; /* Memastikan border dan padding diperhitungkan dalam lebar elemen */
+    display: flex; /* Menggunakan flexbox untuk layout */
+    align-items: center; /* Vertikal align center */
+    justify-content: space-between; /* Memastikan elemen header ditempatkan dengan jarak yang sama */
+    animation-name: fade-in;
+    animation-duration: 1s;
+}
+
+/* Style untuk logo */
+.logo {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url(asset/WhatsApp\ Image\ 2024-08-02\ at\ 15.59.57_032ff972.jpg);
+    background-size: cover;
+    background-position: center; /* Posisi tengah */
+}
+
+/* Style untuk heading h1 */
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 23px;
+    text-align: center;
+    margin: 0; /* Menghapus margin default */
+    flex-grow: 1; /* Memastikan h1 mengambil ruang yang tersisa */
+    font-family: gua;
+}
+    
+h2{
+
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-family: guadua;
+}
+
+/* Style untuk h3 */
+h3 {
+    color: rgb(0, 0, 0);
+    background-color: red;
+    text-align: center;
+    margin: 20px; /* Margin vertikal */
+    animation-duration: 1s;
+    transform: translateX(2px);
+    animation-name: txthdr;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-family: gua;
+}
+
+/* Style untuk link */
+a {
+    color: white;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Style untuk button */
+.tombol {
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid red; /* Border lebih baik */
+    color: white; /* Warna teks putih */
+    padding: 10px 20px; /* Padding di dalam button */
+    margin: 5px; /* Jarak antar button */
+    cursor: pointer; /* Pointer saat hover */
+}
+
+.tombol a {
+    color: white; /* Warna link dalam button */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+/* Style untuk gambar responsif */
+.img1 {
+    width: 20%; /* Gambar tidak akan melebihi lebar container */
+    height: auto; /* Menjaga aspek rasio gambar */
+    display: block; /* Menghindari spasi di bawah gambar */
+    margin: 0 auto; /* Pusatkan gambar dalam container */
+    border: 1px solid white;
+    float: left;
+    box-sizing: border-box; /* Memastikan padding dan border diperhitungkan dalam lebar elemen */
+}
+
+/* Style untuk container */
+.container {
+    box-sizing: border-box; /* Memastikan padding dan border diperhitungkan dalam lebar elemen */
+    padding: 10px; /* Menambahkan padding di sekitar konten */
+    overflow: hidden;
+    max-height: 600px;
+    border: 1px solid blue;
+    margin-bottom: 50px; /* Jarak dengan elemen berikutnya */
+}
+
+/* Style untuk container2 */
+.container2 {
+    border: 2px solid pink;
+    padding: 10px; /* Menambahkan padding di sekitar konten */
+    box-sizing: border-box; /* Memastikan padding dan border diperhitungkan dalam lebar elemen */
+}
+.tombol:hover {
+    border: 2px solid goldenrod;
+    width: 120px;
+    height: 50px;
+    transition-duration: 0.8s;
+}
+.tombol:active {
+    border: 2px solid rgb(0, 166, 255);
+    width: 120px;
+    height: 50px;
+    transition-duration: 0.8s;
+}
+.hero {
+    background-image: url(asset/WhatsApp\ Image\ 2024-08-05\ at\ 21.58.24_85cb8c4c.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px white;
+}
+.gambar {
+    text-align: center;
+}
+.container4 {
+    border: 2px solid greenyellow;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buletin1 {
+    background-image: url(asset/satu.jpg);
+    background-size: cover;
+    border-radius: 100%;
+    width: 30%;
+    height: 200px;
+}
+.buletin2 {
+    background-image: url(asset/dua.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 30%;
+    height: 200px;
+}
+.buletin3 {
+    background-image: url(asset/tiga.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    width: 30%;
+    height: 200px;
+}
